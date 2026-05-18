@@ -5,12 +5,16 @@
 
 ## 学员画像摘要（已确认）
 
-- **AI**：有一点基础；可用 **Vibe Coding** 做前端迭代  
+- **AI**：**概念上偏新手**（会用模型辅助写前端，但 **LLM/上下文/Agent 等按 Handbook「AI 基础」系统补**）  
 - **编程**：偏 **前端能独立交付小界面**；全栈/合约深度按课再补  
-- **Web3**：**新手 / 久未用已淡忘**，Handbook **Web3 基础**（钱包、合约直觉、安全）优先于一口气深挖 Bridge  
+- **Web3**：**新手 / 久未用已淡忘**，与 AI **交替补底**，再进 Bridge  
 - **目标**：**开发**（Demo、工具、集成）  
-- **时间**：每天 **≤ 1 小时** → 每日常 **一小段基础 + 一小段交叉** 或 **半章 + 一小块任务**  
+- **时间**：每天 **≤ 1 小时** → 典型拆法：**约一半 AI 基础 + 约一半 Web3 基础（或轻量预习）**  
 - **仓库**：https://github.com/mint1186870278-lgtm/AI-x-Web3-School-repo  
+
+### 路径说明（避免偏科）
+
+早期若 **只** 啃 Web3，后面读 Bridge（Agent、工具调用）会吃力；若 **只** 啃 AI，又缺少链上权限与交易直觉。**默认节奏**是 **AI 基础与 Web3 基础「双轨交替」**，每天 1h 内各取一小角，而非连续多天只攻一极。
 
 ## Handbook 知识地图（官方四层）
 
@@ -39,13 +43,13 @@
    - [Dev Tooling](https://aiweb3.school/zh/handbook/tracks/dev-tooling/)  
    - [Open Track](https://aiweb3.school/zh/handbook/tracks/open-track/)  
 
-## 本周最小路径（第 0 周：初始化 · **开发 + Web3 重补 + 每天 1h**）
+## 本周最小路径（第 0 周：**AI + Web3 双轨打底** · 开发 · 每天 1h）
 
 | 天 | 目标 |
 |----|------|
-| Day 0–1 | `profile.md` 已定稿；读 Handbook 首页；**Web3 基础**任选「钱包 / 密码学 / 安全」一节入门 + 在 `tasks/` 写 5 条不懂就查的名词 |
-| Day 2–3 | 同一天 1h：**25min Web3 基础** + **35min Bridge（Web3 Tool Use 或 Agent Workflow）** → `daily/` |
-| Day 4–5 | `experiments/`：**最小前端壳**（mock 链上数据即可），**真实私钥、助记词不进仓库** |
+| **2026-05-18（第 1 天）** | [Handbook 首页](https://aiweb3.school/zh/handbook/) + **AI 基础侧栏**：精读 **LLM / 语言模型**或 **Prompt** 入门 **一节**（约 **30～35 min**）+ **Web3 基础侧栏**：仅 **浏览半节～一小节**「钱包」或「安全」建立直觉（约 **20～25 min**）+ `tasks/2026-05-18-day1.md` 各写 **3 条「今日新懂的概念」**（AI 侧 3 + Web3 侧 3，可各一句话） |
+| Day 2–3 | 1h：**25～30 min AI 基础**（如 Context / Agent 其一）+ **余下 Web3 基础**（钱包或协议直觉）+ `daily/` |
+| Day 4–5 | `experiments/`：**最小前端壳**（mock 数据）；**私钥不进仓库** |
 
 ## 三条每日路径模板（由 Agent 按天生成）
 
@@ -64,7 +68,7 @@
 
 ## 进度统计
 
-- 当前侧重：Web3 基础（钱包/安全）→ 再进 Bridge：「Web3 Tool Use」或「Agent Workflow」  
+- 当前侧重：**第 1 天** — Handbook **AI 基础**（LLM 或 Prompt 其一为主）+ **Web3 基础**轻量一刻  
 - 最近更新：2026-05-18  
 
 ---

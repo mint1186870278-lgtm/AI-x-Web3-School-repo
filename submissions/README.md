@@ -15,3 +15,6 @@
 | 任务 | 文件 / 代码 |
 |------|-------------|
 | Web3 基础概念卡片（≥8） | [week1-web3-concept-cards.md](week1-web3-concept-cards.md) |
+| 测试网交易记录（模板） | [week1-web3-testnet-tx.md](week1-web3-testnet-tx.md) |
+| 最小合约部署/调用说明 | [`../experiments/week1-minimal-contract/`](../experiments/week1-minimal-contract/) |
+| 合约任务提交模板 | [week1-web3-contract.md](week1-web3-contract.md) |
