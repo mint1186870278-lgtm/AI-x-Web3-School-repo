@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Week 1 · AI 基础概念自测卡</title>
+  <style>
+    :root {
+      --bg: #0f1419;
+      --card: #1a2332;
+      --text: #e7edf5;
+      --muted: #8b9bb4;
+      --accent: #5eead4;
+      --warn: #fbbf24;
+      --border: #2d3a4f;
+      font-family: "Segoe UI", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(1200px 600px at 10% -10%, #1e293b 0%, var(--bg) 55%);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    main {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 3rem;
+    }
+    h1 { font-size: 1.35rem; margin: 0 0 0.35rem; letter-spacing: 0.02em; }
+    .sub { color: var(--muted); font-size: 0.9rem; margin: 0 0 1.25rem; }
+    label { display: block; font-size: 0.85rem; color: var(--muted); margin-bottom: 0.35rem; }
+    select, textarea, button {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--text);
+      font-size: 1rem;
+      padding: 0.65rem 0.75rem;
+    }
+    textarea { min-height: 96px; resize: vertical; margin-bottom: 0.75rem; }
+    button {
+      cursor: pointer;
+      font-weight: 600;
+      background: linear-gradient(135deg, #0d9488, var(--accent));
+      border: none;
+      color: #042f2e;
+      margin-bottom: 1rem;
+    }
+    button:hover { filter: brightness(1.05); }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem 1.1rem;
+      margin-bottom: 1rem;
+    }
+    .card h2 { font-size: 1rem; margin: 0 0 0.6rem; color: var(--accent); }
+    .card dt { color: var(--muted); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; margin-top: 0.65rem; }
+    .card dd { margin: 0.2rem 0 0; }
+    .out {
+      border-left: 3px solid var(--accent);
+      padding-left: 0.85rem;
+      white-space: pre-wrap;
+      font-size: 0.95rem;
+    }
+    footer { font-size: 0.78rem; color: var(--muted); margin-top: 1.5rem; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>AI 基础概念 · 自测小页</h1>
+    <p class="sub">Week 1 可交互学习产物｜纯静态，无 API Key｜帮助你自述 + 规则化反馈</p>
+
+    <div class="card" id="study-card">
+      <h2 id="c-title">—</h2>
+      <dl>
+        <dt>一句话</dt>
+        <dd id="c-one">—</dd>
+        <dt>例子</dt>
+        <dd id="c-ex">—</dd>
+        <dt>误区 / 边界</dt>
+        <dd id="c-mis">—</dd>
+      </dl>
+    </div>
+
+    <label for="concept">选一个概念</label>
+    <select id="concept" aria-label="选择概念"></select>
+
+    <label for="self" style="margin-top:1rem">用你自己的话复述（至少一句）</label>
+    <textarea id="self" placeholder="例如：LLM 是猜下一个词的，所以我要自己验证事实……"></textarea>
+
+    <button type="button" id="go">生成本页反馈</button>
+
+    <div class="card">
+      <h2>反馈</h2>
+      <div class="out" id="fb">请先选概念、写复述，再点按钮。</div>
+    </div>
+
+    <footer>
+      作者整理 · 与仓库 <code>submissions/week1-ai-concept-cards.md</code> 同源 ·
+      <a href="https://aiweb3.school/zh/handbook/" target="_blank" rel="noreferrer">Handbook</a>
+    </footer>
+  </main>
+
+  <script>
+    const DATA = {
+      llm: {
+        title: "LLM（大语言模型）",
+        one: "读大量文本练出来的概率续写器：猜下一个词，连成回答。",
+        ex: "让它解释 gas，它会按模式生成一段话，不代表已读你链上实时数据。",
+        mis: "当权威事实机；其实可能幻觉。关键结论要交叉验证。",
+        hints: ["概率", "幻觉", "验证", "续写", "下一个词", "不可全信", "编造"]
+      },
+      prompt: {
+        title: "Prompt（提示词）",
+        one: "任务说明 + 背景 + 输出格式，帮模型收窄歧义。",
+        ex: "不要说「写点 Web3」，要说清楚条数、受众、不要出现的敏感示例。",
+        mis: "越长越好易稀释重点；也不要把私钥/助记词写进提示。",
+        hints: ["格式", "条数", "约束", "任务", "说明", "私钥", "助记词", "受众"]
+      },
+      context: {
+        title: "Context window（上下文窗口）",
+        one: "本轮对话里模型能一起看到的文本上限，超出会截断或丢早期细节。",
+        ex: "粘贴超长 PDF 后，早先段落它可能「看不见」。",
+        mis: "以为它永远记住所有历史；长项目要外部笔记/仓库。",
+        hints: ["上限", "截断", "长", "历史", "记不", "窗口", "PDF"]
+      },
+      workflow: {
+        title: "Workflow（工作流）",
+        one: "把复杂事拆成可重复步骤：先后顺序、在哪停顿检查、何时交人。",
+        ex: "先列需求 → AI 出计划草稿 → 人改两点 → 再写代码 → 人跑测。",
+        mis: "步骤多就等于结果对；坏提示/坏数据仍会让工作流失效。",
+        hints: ["步骤", "重复", "检查", "顺序", "人", "测试", "草稿"]
+      },
+      agent: {
+        title: "Agent（智能体）",
+        one: "在模型外包一层循环与工具：多步推理并调用外部能力。",
+        ex: "按 learning-plan 生成今日任务，但写入文件前要你来确认。",
+        mis: "全自动就放心；链上/写库类动作要坚持 human-in-the-loop。",
+        hints: ["工具", "多步", "确认", "权限", "自动", "循环", "人"]
+      },
+      tool: {
+        title: "Tool use（工具调用）",
+        one: "模型发结构化请求，由程序执行 RPC、读文件等，再把结果塞回上下文。",
+        ex: "让 IDE Agent 读真实文件，而不是让模型瞎猜磁盘内容。",
+        mis: "工具越多越安全；反而要防 prompt 注入导致的滥用。",
+        hints: ["RPC", "结构化", "读文件", "滥用", "注入", "程序", "执行"]
+      },
+      coding: {
+        title: "AI coding（用 AI 写代码）",
+        one: "AI 出草稿，你负责跑通、审查边界与安全。",
+        ex: "先提「纯前端、无密钥」，比「一步到位 DApp」更可控。",
+        mis: "零读代码也能上生产；资产相关必须会看 diff。",
+        hints: ["审查", "跑通", "diff", "边界", "安全", "草稿", "密钥"]
+      },
+      guard: {
+        title: "Guardrails（护栏）",
+        one: "限制模型/工具能做什么：白名单、只读、二次确认、沙箱。",
+        ex: "禁止自动 force push；禁止把 .env 提交公开仓库。",
+        mis: "有护栏就百分百安全；要持续迭代策略与审计。",
+        hints: ["白名单", "只读", "确认", "沙箱", "禁止", "审计", "越权"]
+      },
+      hitl: {
+        title: "Human-in-the-loop（人在回路）",
+        one: "关键步骤必须等人确认后再继续，而不是全自动化。",
+        ex: "合并前看 diff；上链前自己在钱包签名。",
+        mis: "全自动才高级；学习与资产场景慢一点更稳。",
+        hints: ["确认", "签名", "合并", "人工", "慢一点", "关键"]
+      },
+      tracing: {
+        title: "Tracing（可追溯 / 记录）",
+        one: "记录模型推理与工具调用过程，便于复盘与分责。",
+        ex: "导出 Agent 会话日志；业务里打印 tool_call JSON。",
+        mis: "没日志也能靠猜排障；日志里别写密钥与用户隐私。",
+        hints: ["日志", "工具", "复盘", "记录", "调用", "隐私", "排障"]
+      }
+    };
+
+    const sel = document.getElementById("concept");
+    const titles = {
+      llm: "LLM",
+      prompt: "Prompt",
+      context: "Context window",
+      workflow: "Workflow",
+      agent: "Agent",
+      tool: "Tool use",
+      coding: "AI coding",
+      guard: "Guardrails",
+      hitl: "Human-in-the-loop",
+      tracing: "Tracing"
+    };
+    Object.keys(DATA).forEach((k) => {
+      const o = document.createElement("option");
+      o.value = k;
+      o.textContent = titles[k];
+      sel.appendChild(o);
+    });
+
+    function renderCard(key) {
+      const d = DATA[key];
+      document.getElementById("c-title").textContent = d.title;
+      document.getElementById("c-one").textContent = d.one;
+      document.getElementById("c-ex").textContent = d.ex;
+      document.getElementById("c-mis").textContent = d.mis;
+    }
+
+    sel.addEventListener("change", () => renderCard(sel.value));
+    renderCard(sel.value);
+
+    document.getElementById("go").addEventListener("click", () => {
+      const key = sel.value;
+      const d = DATA[key];
+      const t = document.getElementById("self").value.trim();
+      const fb = document.getElementById("fb");
+      if (t.length < 6) {
+        fb.textContent = "输入太短。请至少用一句话（建议 15 字以上）写下你的理解，再试一次。";
+        return;
+      }
+      const hit = d.hints.filter((h) => t.includes(h)).length;
+      const lines = [];
+      lines.push("【长度】：" + (t.length < 15 ? "偏短；建议再补半句「你会怎么用 / 怎么验证」。" : "OK"));
+      lines.push("【关键词命中】：" + hit + " / " + d.hints.length + "（命中越少，回想一下卡片里的「误区/边界」）");
+      if (hit >= 2) {
+        lines.push("【评价】不错：你复述里碰到了这个概念的关键 tension。");
+      } else {
+        lines.push("【建议】试着点名：概率/验证/权限/确认/工具 等你卡片里强调的词。");
+      }
+      lines.push("【下一步】对照误区：写一句「我以后会在什么场景警惕它」。");
+      lines.push("\n—— 本反馈为本地规则生成，用于促写；非云端模型评分。");
+      fb.textContent = lines.join("\n");
+    });
+  </script>
+</body>
+</html>
