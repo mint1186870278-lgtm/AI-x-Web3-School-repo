@@ -9,6 +9,7 @@
 | AI 基础概念卡片（≥6） | [week1-ai-concept-cards.md](week1-ai-concept-cards.md) |
 | Learning Agent Setup | [week1-learning-agent-setup.md](week1-learning-agent-setup.md) |
 | 可交互学习产物说明 + 入口 | [week1-interactive-artifact.md](week1-interactive-artifact.md) → [`../experiments/week1-interactive-concept/`](../experiments/week1-interactive-concept/) |
+| AI × Web3 最小交叉流程图 | [week1-ai-web3-cross-flow.md](week1-ai-web3-cross-flow.md) + `week1-ai-web3-cross-flow.png` |
 
 ## Week 1 · Web3 向（示例索引）
 
