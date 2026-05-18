@@ -7,10 +7,10 @@
 
 - **AI**：有一点基础；可用 **Vibe Coding** 做前端迭代  
 - **编程**：偏 **前端能独立交付小界面**；全栈/合约深度按课再补  
-- **Web3**：**新手 / 久未用已淡忘**，Handbook **Web3 基础**与 [Wallet](https://aiweb3.school/zh/handbook/) 相关章节优先于深挖 Bridge  
+- **Web3**：**新手 / 久未用已淡忘**，Handbook **Web3 基础**（钱包、合约直觉、安全）优先于一口气深挖 Bridge  
 - **目标**：**开发**（Demo、工具、集成）  
-- **时间**：每天 **≤ 1 小时** → Bridge 章节宜 **半章 + 一小块任务**，不贪多  
-- **仓库**：https://github.com/mint1186870278-lgtm/AI-x-Web3-School-repo
+- **时间**：每天 **≤ 1 小时** → 每日常 **一小段基础 + 一小段交叉** 或 **半章 + 一小块任务**  
+- **仓库**：https://github.com/mint1186870278-lgtm/AI-x-Web3-School-repo  
 
 ## Handbook 知识地图（官方四层）
 
@@ -37,32 +37,100 @@
    - [AI Security（赛道）](https://aiweb3.school/zh/handbook/tracks/ai-security/)  
    - [Governance](https://aiweb3.school/zh/handbook/tracks/governance/)  
    - [Dev Tooling](https://aiweb3.school/zh/handbook/tracks/dev-tooling/)  
-   - [Open Track](https://aiweb3.school/zh/handbook/tracks/open-track/)
+   - [Open Track](https://aiweb3.school/zh/handbook/tracks/open-track/)  
 
-## 本周最小路径（第 0 周：初始化 · **开发 + 每天 1h**）
+## 本周最小路径（第 0 周：初始化 · **开发 + Web3 重补 + 每天 1h**）
 
 | 天 | 目标 |
 |----|------|
-| Day 0–1 | `profile.md` 已更新；读 Handbook 首页 + [Web3 Tool Use](https://aiweb3.school/zh/handbook/bridge/web3-tool-use/) **或** [Agent Workflow](https://aiweb3.school/zh/handbook/bridge/agent-workflow/) 其一，列 3 个「能做成前端 Demo 的点子」到 `tasks/` |
-| Day 2–3 | 同一天 1h 内：**20min Web3 基础补洞（钱包/账号）** + **40min Bridge 精读笔记** → `daily/` |
-| Day 4–5 | 在 `experiments/` 起 **最小前端壳**（只读 RPC 或 mock 数据即可），**不写真实私钥进仓库** |
+| Day 0–1 | `profile.md` 已定稿；读 Handbook 首页；**Web3 基础**任选「钱包 / 密码学 / 安全」一节入门 + 在 `tasks/` 写 5 条不懂就查的名词 |
+| Day 2–3 | 同一天 1h：**25min Web3 基础** + **35min Bridge（Web3 Tool Use 或 Agent Workflow）** → `daily/` |
+| Day 4–5 | `experiments/`：**最小前端壳**（mock 链上数据即可），**真实私钥、助记词不进仓库** |
 
 ## 三条每日路径模板（由 Agent 按天生成）
 
-- **最小路径**：15–30 min，1 个章节或 1 节 + 3 条笔记  
-- **推荐路径**：45–60 min，章节 + `tasks/` 一条可交付小结  
-- **挑战路径**：60 min+，章节 + 最小实验或 feedback 草稿  
+- **最小路径**：15–30 min，1 小节 + 3 条笔记  
+- **推荐路径**：45–60 min，一小节 + `tasks/` 一条可交付小结  
+- **挑战路径**：60 min，读完一节 + 极简可运行前端片段（无密钥）  
 
 ## 里程碑
 
 | 里程碑 | 目标 | 状态 |
 |--------|------|------|
-| M0 | 远程 GitHub 仓库就绪、首 push | [ ] |
-| M1 | Bridge 至少 3 章读完 + 打卡 | [ ] |
+| M0 | 远程 GitHub 与本地历史对齐、可持续 push | [ ] |
+| M1 | Web3 基础 ≥3 节 + Bridge ≥2 节 + 打卡 | [ ] |
 | M2 | 提交 1 条结构化 `handbook-feedback/` | [ ] |
-| M3 | Hackathon/项目草案进 `hackathon/` 或 `submissions/` | [ ] |
+| M3 | 小项目 / Hackathon 草案进 `hackathon/` 或 `submissions/` | [ ] |
 
 ## 进度统计
 
-- 当前侧重章节：**Web3 Tool Use** 或 **Agent Workflow**（二选一开局）  
+- 当前侧重：Web3 基础（钱包/安全）→ 再进 Bridge：「Web3 Tool Use」或「Agent Workflow」  
 - 最近更新：2026-05-18  
+
+---
+
+## 附录：42 模块总览（细颗粒度勾选，可与营内编号对齐）
+
+### Part 1 — AI 基础（模块 01–11）
+
+| # | 模块 | 英文名 | 页数 | 状态 |
+|---|------|--------|------|------|
+| 01 | 语言模型 | LLM | 5p | 未开始 |
+| 02 | 提示词 | Prompt | 5p | 未开始 |
+| 03 | 上下文窗口 | Context | 5p | 未开始 |
+| 04 | 检索增强生成 | RAG | 5p | 未开始 |
+| 05 | 智能体 | Agent | 6p | 未开始 |
+| 06 | 框架 | Frameworks | 6p | 未开始 |
+| 07 | 氛围编程 | Vibe Coding | 7p | 未开始 |
+| 08 | 模型上下文协议 | MCP | 5p | 未开始 |
+| 09 | 评估 | Evaluation | 5p | 未开始 |
+| 10 | 微调 | Fine-tuning | 5p | 未开始 |
+| 11 | 推理 | Inference | 4p | 未开始 |
+
+### Part 2 — Web3 基础（模块 12–21）
+
+| # | 模块 | 英文名 | 页数 | 状态 |
+|---|------|--------|------|------|
+| 12 | 密码学 | Cryptography | 5p | 未开始 |
+| 13 | 钱包 | Wallet | 5p | 未开始 |
+| 14 | 智能合约 | Smart Contract | 7p | 未开始 |
+| 15 | 开发栈 | Dev Stack | 7p | 未开始 |
+| 16 | 网络 | Network | 5p | 未开始 |
+| 17 | 账户抽象 | Account Abstraction | 5p | 未开始 |
+| 18 | 去中心化金融 | DeFi | 5p | 未开始 |
+| 19 | 预言机 | Oracle | 4p | 未开始 |
+| 20 | 索引 | Indexing | 5p | 未开始 |
+| 21 | 安全 | Security | 5p | 未开始 |
+
+### Part 3 — AI × Web3 融合（模块 22–36）
+
+| # | 模块 | 英文名 | 页数 | 状态 |
+|---|------|--------|------|------|
+| 22 | 链感知上下文 | Chain-aware Context | 5p | 未开始 |
+| 23 | Web3 工具调用 | Web3 Tool Use | 5p | 未开始 |
+| 24 | 智能体工作流 | Agent Workflow | 5p | 未开始 |
+| 25 | 智能体钱包 | Agent Wallet | 9p | 未开始 |
+| 26 | 机器支付 | Machine Payment | 6p | 未开始 |
+| 27 | 结算与托管 | Settlement & Escrow | 5p | 未开始 |
+| 28 | 智能体身份 | Agent Identity | 5p | 未开始 |
+| 29 | 智能体信任与声誉 | Agent Trust & Reputation | 5p | 未开始 |
+| 30 | AI 预言机 | AI Oracle | 5p | 未开始 |
+| 31 | 可验证 AI | Verifiable AI | 5p | 未开始 |
+| 32 | AI 安全 | AI Security | 5p | 未开始 |
+| 33 | AI 隐私 | AI Privacy | 5p | 未开始 |
+| 34 | AI 主权 | AI Sovereignty | 6p | 未开始 |
+| 35 | 治理 AI | Governance AI | 5p | 未开始 |
+| 36 | 去中心化 AI | Decentralized AI | 7p | 未开始 |
+
+### Part 4 — 实战应用（模块 37–42）
+
+| # | 模块 | 英文名 | 页数 | 状态 |
+|---|------|--------|------|------|
+| 37 | 智能体商业 | Agentic Commerce | 6p | 未开始 |
+| 38 | 开发者工具 | Dev Tooling | 6p | 未开始 |
+| 39 | 钱包权限 | Wallet Permission | 6p | 未开始 |
+| 40 | AI 安全（实战） | AI Security | 6p | 未开始 |
+| 41 | 治理 | Governance | 6p | 未开始 |
+| 42 | 开放赛道 | Open Track | 6p | 未开始 |
+
+**附录进度**：已完成 0 / 42 · 当前模块：—

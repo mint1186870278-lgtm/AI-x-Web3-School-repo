@@ -44,6 +44,8 @@ _
 
 **打卡链接或截图说明**：_提交后把 WCB/营内打卡 URL 或工单号写这里_
 
+**快捷入口**：[WCB Learning 打卡区](https://web3career.build/zh/programs/AI-Web3-School#tab=learning)
+
 学习时长：约 __ 分钟  
 
 ---

@@ -2,6 +2,8 @@
 
 Personal learning journal and proof-of-work for [AI × Web3 School](https://aiweb3.school/zh/handbook/).
 
+> 这是我在 AI × Web3 School 的学习记录与 Proof-of-Work 仓库。
+
 ## 固定入口
 
 | 资源 | 链接 |
@@ -32,49 +34,34 @@ submissions/               # 营内提交说明与链接备份
 templates/
   daily-note.md
   task-note.md
+handbooks/                 # 本地 PDF 仅在本机，见 handbooks/README.md
 ```
 
-`docs/` 与 `daily-logs/` 为旧版路径，内容已迁移至根目录 `profile.md`、`learning-plan.md` 与 `daily/`；请勿在新打卡中使用旧路径。
+`docs/` 与 `daily-logs/` 为旧版路径说明，新打卡请用根目录 `profile.md`、`learning-plan.md` 与 `daily/`。
+
+## 学员信息
+
+- **GitHub**：[@mint1186870278-lgtm](https://github.com/mint1186870278-lgtm)
+- **仓库**：https://github.com/mint1186870278-lgtm/AI-x-Web3-School-repo
+- **开始日期**：2026-05-17
+- **方向**：**开发**（前端可交付 Demo；Web3 按新手重补基础）
+- **每日投入**：≤ 1 小时
+- **打卡提醒**（与 Agent 约定）：_早上 / 晚上 / 早晚 / 暂不_
 
 ## 学习进度看板（简版）
 
-- [x] 完成 `profile.md` 并向 Agent 确认画像（**Web3 档位可再补一句**）
-- [x] GitHub 学习仓库：<https://github.com/mint1186870278-lgtm/AI-x-Web3-School-repo>
-- [ ] 本地目录与远程 **完成首 push / 历史对齐**（见下文「关联远程」）
+- [x] 完成 `profile.md` 并向 Agent 确认画像
+- [x] GitHub 学习仓库已与本地关联
+- [ ] `daily/`、`handbook-feedback/` 按营内节奏推进
 - [ ] 每周至少 1 条 `handbook-feedback/`（无问题可写「本周无疑问」占位说明）
-- [ ] `daily/` 连续打卡按营内要求执行
 
-详细统计可写在 `learning-plan.md` 底部。
+详细统计写在 `learning-plan.md` 底部。
 
-## 关联远程（你的仓库已创建）
+## 远程仓库
 
-远程：<https://github.com/mint1186870278-lgtm/AI-x-Web3-School-repo.git>
+已配置 `origin`：<https://github.com/mint1186870278-lgtm/AI-x-Web3-School-repo.git>
 
-在本目录（若尚未添加）：
-
-```powershell
-git remote add origin https://github.com/mint1186870278-lgtm/AI-x-Web3-School-repo.git
-```
-
-若远程已有首次 commit、本地也有独立历史，首迁合流可：
-
-```powershell
-git branch -M main
-git fetch origin
-git pull origin main --allow-unrelated-histories
-# 如有冲突，解决后
-git push -u origin main
-```
-
-**Windows（PowerShell）**：可参考 `scripts/init-github-remote.ps1`。勿将 token 发给 Agent。
-
-## 每日提醒（可选）
-
-可与 Agent 约定：**早上** / **晚上** / **早晚** / **暂不提醒**。
-
----
-
-## 快速命令（Git）
+日常推送：
 
 ```powershell
 git status --short
@@ -83,4 +70,10 @@ git commit -m "docs: update AI Web3 School daily log"
 git push
 ```
 
+**Windows**：可参考 `scripts/init-github-remote.ps1`。勿将 token 发给 Agent。
+
 无实质改动时不要空提交。
+
+## 每日提醒（可选）
+
+可与 Agent 约定：**早上** / **晚上** / **早晚** / **暂不提醒**。
