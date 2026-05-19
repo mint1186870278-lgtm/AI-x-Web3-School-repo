@@ -19,3 +19,10 @@
 | 测试网交易记录（模板） | [week1-web3-testnet-tx.md](week1-web3-testnet-tx.md) |
 | 最小合约部署/调用说明 | [`../experiments/week1-minimal-contract/`](../experiments/week1-minimal-contract/) |
 | 合约任务提交模板 | [week1-web3-contract.md](week1-web3-contract.md) |
+| EOA / 智能账户 / 多签权限对比 | [week1-eoa-account-compare.md](week1-eoa-account-compare.md) |
+
+## Week 1 · 工具准备
+
+| 任务 | 文件 |
+|------|------|
+| 课程工具准备记录 | [week1-tool-setup.md](week1-tool-setup.md) |
