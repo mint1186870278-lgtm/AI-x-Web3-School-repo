@@ -21,6 +21,13 @@
 | 合约任务提交模板 | [week1-web3-contract.md](week1-web3-contract.md) |
 | EOA / 智能账户 / 多签权限对比 | [week1-eoa-account-compare.md](week1-eoa-account-compare.md) |
 
+## Week 1 · Bridge（AI × Web3 交叉）
+
+| 任务 | 文件 |
+|------|------|
+| 受限 Web3 助手授权规则设计 | [week1-restricted-web3-agent.md](week1-restricted-web3-agent.md) |
+| AI × Web3 行业观察清单（本周滚动） | [week1-industry-radar.md](week1-industry-radar.md) |
+
 ## Week 1 · 工具准备
 
 | 任务 | 文件 |
