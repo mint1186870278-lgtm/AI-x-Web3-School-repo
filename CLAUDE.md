@@ -18,6 +18,7 @@
 - 用户说「打卡」时，生成或更新当天 `daily/YYYY-MM-DD.md`  
 - 用户说「feedback」时，套 `handbook-feedback/feedback-template.md` 新建草稿  
 - WCB Agent API Key 仅环境变量（如 `WCB_AGENT_SECRET_API_KEY`），**永不写入仓库**
+- 每次对话收尾时，检查 `AGENT-STARTUP.md` 顶部的「最后更新」日期，若落后当日则提示用户同步进度表与待完成任务列表
 
 ## 提醒节奏（学员：早 / 中 / 晚）
 

@@ -1,5 +1,7 @@
 # AI × Web3 School — Learning Agent 启动 Prompt
 
+> 最后更新：2026-05-22（进度表与任务状态需与 `daily/` 和 `tasks/` 同步，每次 push 前确认）
+
 > 把这整段复制粘贴到新对话框的开头即可。
 
 ---
@@ -41,13 +43,14 @@
 - submissions/ 文件只放可公开内容，链接指向 GitHub
 - 推送前我会确认文件内容
 
-## Handbook 阅读进度（截至 2026-05-20）
+## Handbook 阅读进度（截至 2026-05-21）
 
 | 日期 | AI 基础 | Web3 基础 | Bridge |
 |------|---------|---------|--------|
 | Day 1（5/18） | LLM | 密码学/私钥/哈希 | — |
 | Day 2（5/19） | Prompt · Context Window | Wallet | — |
 | Day 3（5/20） | Agent · RAG | Smart Contract | Agent Workflow · Agent Wallet |
+| Day 4（5/21） | Fine-tuning · Inference | Dev Stack | 链感知上下文 |
 
 ## Week 1 任务完成情况（截至 2026-05-20）
 

@@ -26,7 +26,7 @@ profile.md                 # 学员画像（Learning Agent 优先读）
 learning-plan.md           # 周节奏 + Handbook 地图 + 里程碑
 CLAUDE.md                  # Cursor / Claude 侧 Agent 约定
 daily/                     # 每日打卡（YYYY-MM-DD.md）
-tasks/                     # 任务小结 / Proof-of-work
+tasks/                     # Handbook 每日阅读笔记（YYYY-MM-DD-dayN.md）
 experiments/               # 小实验与草稿（无密钥）
 handbook-feedback/         # Handbook 结构化反馈，可索引、可开源
 hackathon/                 # 黑客松相关
@@ -37,7 +37,6 @@ templates/
 handbooks/                 # 本地 PDF 仅在本机，见 handbooks/README.md
 ```
 
-`docs/` 与 `daily-logs/` 为旧版路径说明，新打卡请用根目录 `profile.md`、`learning-plan.md` 与 `daily/`。
 
 ## 学员信息
 
@@ -50,15 +49,9 @@ handbooks/                 # 本地 PDF 仅在本机，见 handbooks/README.md
 
 ## 早 / 中 / 晚提醒（与 Learning Agent）
 
-我无法在固定钟点 **主动弹窗或发推送**；只有你 **打开 Cursor 并发起对话** 的这一瞬间，我才能按你说的时段（早上 / 中午 / 晚上）给对应清单。约定如下：
+开对话时说「早间提醒」「午间提醒」或「晚间提醒」，Agent 会给对应时段的学习清单。详细响应逻辑见 [`CLAUDE.md`](CLAUDE.md)。
 
-| 时段 | 你开场可以说 | Agent 默认帮你看 |
-|------|----------------|------------------|
-| 早 | 「早间提醒」 | 今日 1h 最小路径、WCB Learning 今日任务、打开 `daily/今天.md` 填计划 |
-| 中 | 「午间提醒」 | 进度是否过半、卡在哪、要不要把问题记进 `handbook-feedback/` |
-| 晚 | 「晚间提醒」 | 今日 `daily/` 小结、**打卡草稿**、明日第一条任务 |
-
-若需 **真正的定时推送**，请用手机日历 / 闹钟 / 系统「提醒事项」各设一条，标题指向本仓库或 WCB Learning 链接即可。
+若需真正的定时推送，请用手机日历各设一条闹钟，标题指向 [WCB Learning](https://web3career.build/zh/programs/AI-Web3-School#tab=learning) 即可。
 
 ## 学习进度看板（简版）
 
@@ -86,4 +79,3 @@ git push
 
 无实质改动时不要空提交。
 
-（提醒节奏已固定为 **早 / 中 / 晚**，见上文「早 / 中 / 晚提醒」。）
