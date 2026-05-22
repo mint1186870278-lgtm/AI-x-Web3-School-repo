@@ -46,6 +46,9 @@ __pycache__/
 # Build
 dist/
 build/
+
+# Local Handbook PDFs（体积/版权：勿进 public 仓库）
+handbooks/*.pdf
 EOF
 echo "[2/5] .gitignore 创建完成"
 
@@ -79,5 +82,5 @@ echo "[4/5] 脚本执行完成，等待手动推送"
 echo ""
 echo "=== 完成后记得 ==="
 echo "- 更新 README.md 中的 GitHub 用户名"
-echo "- 填写 docs/profile.md 背景自评"
+echo "- 填写 profile.md 背景自评"
 echo "- 访问 https://aiweb3.school/zh/handbook/ 更新模块列表"
