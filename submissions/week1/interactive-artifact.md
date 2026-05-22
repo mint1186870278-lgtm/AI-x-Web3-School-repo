@@ -2,8 +2,8 @@
 
 ## 产物位置
 
-- **代码 / 静态页**：[`experiments/week1-interactive-concept/`](../experiments/week1-interactive-concept/)  
-- **打开方式**：克隆仓库后，用浏览器直接打开 `experiments/week1-interactive-concept/index.html`（`file://` 即可），或 `npx serve` 静态托管。
+- **代码 / 静态页**：[`experiments/week1/interactive-concept/`](../../experiments/week1/interactive-concept/)  
+- **打开方式**：克隆仓库后，用浏览器直接打开 `experiments/week1/interactive-concept/index.html`（`file://` 即可），或 `npx serve` 静态托管。
 
 ---
 
@@ -40,7 +40,7 @@
 
 | 部分 | 说明 |
 |------|--------|
-| 卡片正文 | 由学习者整理（与 [`week1-ai-concept-cards.md`](week1-ai-concept-cards.md) 同源思路），**人工重写**后写入 `index.html` 内嵌数据 |
+| 卡片正文 | 由学习者整理（与 [`ai-concept-cards.md`](ai-concept-cards.md) 同源思路），**人工重写**后写入 `index.html` 内嵌数据 |
 | 交互与反馈规则 | **手写 JS**：字数阈值 + 简单关键词表；**刻意不接 API**，避免在作业仓库存密钥 |
 | 验证 | 本地打开页面逐条点选、试短输入/长输入，确认无报错、无外链追踪 |
 

@@ -1,35 +1,7 @@
 # submissions/
 
-面向营内/平台的提交说明、链接备份、截图索引（避免存放大文件；可用外链）。正式提交以 WCB / 平台为准。
+课程任务提交索引，按周归档。
 
-## Week 1 · AI 向（示例索引）
-
-| 任务 | 文件 |
-|------|------|
-| AI 基础概念卡片（≥6） | [week1-ai-concept-cards.md](week1-ai-concept-cards.md) |
-| Learning Agent Setup | [week1-learning-agent-setup.md](week1-learning-agent-setup.md) |
-| 可交互学习产物说明 + 入口 | [week1-interactive-artifact.md](week1-interactive-artifact.md) → [`../experiments/week1-interactive-concept/`](../experiments/week1-interactive-concept/) |
-| AI × Web3 最小交叉流程图 | [week1-ai-web3-cross-flow.md](week1-ai-web3-cross-flow.md) + `week1-ai-web3-cross-flow.png` |
-
-## Week 1 · Web3 向（示例索引）
-
-| 任务 | 文件 / 代码 |
-|------|-------------|
-| Web3 基础概念卡片（≥8） | [week1-web3-concept-cards.md](week1-web3-concept-cards.md) |
-| 测试网交易记录（模板） | [week1-web3-testnet-tx.md](week1-web3-testnet-tx.md) |
-| 最小合约部署/调用说明 | [`../experiments/week1-minimal-contract/`](../experiments/week1-minimal-contract/) |
-| 合约任务提交模板 | [week1-web3-contract.md](week1-web3-contract.md) |
-| EOA / 智能账户 / 多签权限对比 | [week1-eoa-account-compare.md](week1-eoa-account-compare.md) |
-
-## Week 1 · Bridge（AI × Web3 交叉）
-
-| 任务 | 文件 |
-|------|------|
-| 受限 Web3 助手授权规则设计 | [week1-restricted-web3-agent.md](week1-restricted-web3-agent.md) |
-| AI × Web3 行业观察清单（本周滚动） | [week1-industry-radar.md](week1-industry-radar.md) |
-
-## Week 1 · 工具准备
-
-| 任务 | 文件 |
-|------|------|
-| 课程工具准备记录 | [week1-tool-setup.md](week1-tool-setup.md) |
+| 周次 | 目录 | Proof-of-Work 汇总 |
+|------|------|-------------------|
+| Week 1 | [week1/](week1/) | [week1/README.md](week1/README.md) |

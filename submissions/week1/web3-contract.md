@@ -45,7 +45,7 @@ contract Hello {
 }
 ```
 
-**代码存放**：按课程允许 **仅在此 Markdown 贴码**；本仓库另有独立练习用 [`experiments/week1-minimal-contract/Counter.sol`](../experiments/week1-minimal-contract/Counter.sol)（`Counter`，非本笔 `Hello`）。
+**代码存放**：按课程允许 **仅在此 Markdown 贴码**；本仓库另有独立练习用 [`experiments/week1/minimal-contract/Counter.sol`](../../experiments/week1/minimal-contract/Counter.sol)（`Counter`，非本笔 `Hello`）。
 
 ## 5. 简短说明（可直接用于作业框）
 
