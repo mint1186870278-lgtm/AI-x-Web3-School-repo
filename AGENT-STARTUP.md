@@ -37,6 +37,7 @@
   2. git add <文件列表>
   3. git commit -m "..." 然后 git push origin main
 - 若遇网络问题（port 443 timeout）稍等重试即可
+- 所有改动完成后必须先展示给用户 review，等用户明确说「可以」之后才能执行 git push
 
 ## 安全边界
 - 绝不在任何文件中写入私钥、助记词、API Key
