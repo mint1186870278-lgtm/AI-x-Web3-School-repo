@@ -57,7 +57,7 @@
 | Day 3（5/20） | Agent · RAG | Smart Contract | Agent Workflow · Agent Wallet |
 | Day 4（5/21） | Fine-tuning · Inference | Dev Stack | 链感知上下文 |
 | Day 5（5/22） | Frameworks | Network | Machine Payment |
-| Day 6（5/25） | — | — | Week 2 模块概览（Module A–G 框架理解） |
+| Day 6（5/25） | Vibe Coding · MCP · Evaluation | — | Week 2 模块概览（Module A–G 框架理解） |
 
 **Week 2 重点阅读队列（按任务优先级）**
 
