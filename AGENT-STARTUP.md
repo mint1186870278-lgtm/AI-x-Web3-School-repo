@@ -1,6 +1,6 @@
 # AI × Web3 School — Learning Agent 启动 Prompt
 
-> 最后更新：2026-05-22 晚（进度表与任务状态需与 `daily/` 和 `tasks/` 同步，每次 push 前确认）
+> 最后更新：2026-05-25 午（Week 2 任务同步；Week 1 全部完成）
 
 > 把这整段复制粘贴到新对话框的开头即可。
 
@@ -45,7 +45,7 @@
 - submissions/ 文件只放可公开内容，链接指向 GitHub
 - 推送前我会确认文件内容
 
-## Handbook 阅读进度（截至 2026-05-22）
+## Handbook 阅读进度（截至 2026-05-25）
 
 | 日期 | AI 基础 | Web3 基础 | Bridge |
 |------|---------|---------|--------|
@@ -54,10 +54,21 @@
 | Day 3（5/20） | Agent · RAG | Smart Contract | Agent Workflow · Agent Wallet |
 | Day 4（5/21） | Fine-tuning · Inference | Dev Stack | 链感知上下文 |
 | Day 5（5/22） | Frameworks | Network | Machine Payment |
+| Day 6（5/25） | — | — | Week 2 模块概览（Module A–G 框架理解） |
 
-## Week 1 任务完成情况（截至 2026-05-22）
+**Week 2 重点阅读队列（按任务优先级）**
 
-### 已完成并 push ✅
+| 优先级 | 模块 | Handbook 节 | 对应任务 |
+|--------|------|------------|---------|
+| ⭐1 | Settlement & Escrow | Bridge 模块 27 | payment-flow.md |
+| ⭐2 | Agent Identity | Bridge 模块 28 | agent-identity.md |
+| ⭐3 | Account Abstraction | Web3 模块 17 | wallet-permission.md |
+| 4 | AI Security | Bridge 模块 32 | threat-model.md |
+| 5 | Governance AI | Bridge 模块 35 | governance-flow.md |
+| 6 | Agentic Commerce（Tracks） | 模块 37 | week2-proposal.md |
+
+## Week 1 任务完成情况 ✅ 全部完成
+
 | 文件（submissions/week1/ 下） | 任务 | 分值 |
 |------|------|------|
 | ai-concept-cards.md | AI 基础概念卡片（≥6） | 20 |
@@ -69,22 +80,37 @@
 | web3-contract.md | 最小合约部署 | 20 |
 | eoa-account-compare.md | EOA/智能账户/多签对比 | 30 |
 | tool-setup.md | 课程工具准备记录 | 10 |
-| restricted-web3-agent.md | 受限 Web3 助手授权规则设计 | 40 |
-| industry-radar.md | AI × Web3 行业观察清单（持续更新） | 20 |
+| restricted-web3-agent.md | 受限 Web3 助手授权规则设计（补完） | 40 |
+| industry-radar.md | AI × Web3 行业观察清单 | 20 |
 | project-deconstruct.md | AI × Web3 项目拆解（AgentKit & Eliza） | 30 |
+| learning-summary.md | Week 1 学习总结 | 20 |
+| README.md | Week 1 Proof-of-Work Pack | 40 |
 
-### 待完成 ⏳
-| 任务 | 分值 | 建议文件名 |
-|------|------|----------|
-| 发布 AI × Web3 学习总结 | 20 | submissions/week1/learning-summary.md |
-| 提交 Week 1 Proof-of-Work Pack | 40 | submissions/week1/README.md 完善即可 |
-| 在 X 上发布起点（可选） | 10 | — |
+**Week 1 合计：330 分（含 10 分可选 X 发布）**
+
+## Week 2 任务进度（截至 2026-05-25）
+
+**主方向：Payment / Commerce / Settlement**  
+**课程参考：** https://ethpanda.notion.site/Week-2-AI-Web3-354bbd63be87818a83abdca6da1e50cf
+
+| 文件（submissions/week2/ 下） | 任务 | 分值 | 状态 |
+|------|------|------|------|
+| direction-map.md | 方向研究｜问题地图 + 主方向选择 | 20 | ✅ |
+| payment-flow.md | Payment / Commerce｜最小支付流程拆解 | 20 | ⏳ |
+| x402-caw-design.md | 进阶实践｜x402 + CAW 自主支付闭环 | 40 | ⏳ |
+| agent-identity.md | Agent Identity｜Profile 与能力声明草图 | 20 | ⏳ |
+| wallet-permission.md | Wallet / Permission｜权限策略设计 | 20 | ⏳ |
+| threat-model.md | Security / Privacy｜Threat Model | 20 | ⏳ |
+| governance-flow.md | Governance / Coordination｜治理流程草图 | 20 | ⏳ |
+| week2-proposal.md | 总交付｜方向深挖包 + 项目初步 Proposal | 40 | ⏳ |
+
+**Week 2 合计：200 分**
 
 ## 今天我要做什么（每次对话开始时说日期即可）
 
 告诉我今天是几月几号，我会：
-1. 给你 Handbook 今日推荐阅读（AI基础 + Web3基础 + Bridge 各一章）
-2. 给你今日任务清单（未完成的 Week 1 任务按优先级）
+1. 给你 Handbook 今日推荐阅读（优先 Week 2 任务相关模块）
+2. 给你今日任务清单（Week 2 未完成任务按优先级）
 3. 帮你生成阅读笔记模板和任务草稿
 4. 在你确认后整理 daily log 和 push 命令
 ```
