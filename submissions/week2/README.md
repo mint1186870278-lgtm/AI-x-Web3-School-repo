@@ -13,11 +13,11 @@
 | [direction-map.md](direction-map.md) | 方向研究｜AI × Web3 问题地图与主方向选择 | 20 | ✅ |
 | [payment-flow.md](payment-flow.md) | Payment / Commerce｜最小支付与商业流程拆解 | 20 | ✅ |
 | [x402-caw-design.md](x402-caw-design.md) | 进阶实践｜x402 Paywall + CAW Agent 自主支付闭环 | 40 | ✅ |
-| [agent-identity.md](agent-identity.md) | Agent Identity｜Agent Profile 与能力声明草图 | 20 | ⏳ |
-| [wallet-permission.md](wallet-permission.md) | Wallet / Permission｜Agent 链上动作权限策略 | 20 | ⏳ |
-| [threat-model.md](threat-model.md) | Security / Privacy｜Agent Workflow Threat Model | 20 | ⏳ |
-| [governance-flow.md](governance-flow.md) | Governance / Coordination｜治理协作流程草图 | 20 | ⏳ |
-| [week2-proposal.md](week2-proposal.md) | 总交付｜方向深挖包与项目初步 Proposal | 40 | ⏳ |
+| [agent-identity.md](agent-identity.md) | Agent Identity｜Agent Profile 与能力声明草图 | 20 | ✅ |
+| [wallet-permission.md](wallet-permission.md) | Wallet / Permission｜Agent 链上动作权限策略 | 20 | ✅ |
+| [threat-model.md](threat-model.md) | Security / Privacy｜Agent Workflow Threat Model | 20 | ✅ |
+| [governance-flow.md](governance-flow.md) | Governance / Coordination｜治理协作流程草图 | 20 | ✅ |
+| [week2-proposal.md](week2-proposal.md) | 总交付｜方向深挖包与项目初步 Proposal | 40 | ✅ |
 
 **Week 2 总计：200 分**
 
